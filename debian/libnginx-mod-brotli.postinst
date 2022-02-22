@@ -1,0 +1,17 @@
+#!/bin/sh
+
+cat <<BANNER
+-----------------------------------------------------------------------
+
+You have to enable this module by adding the following line to nginx
+configuration then reload nginx:
+
+    load_module modules/ngx_http_brotli_filter_module.so;
+    load_module modules/ngx_http_brotli_static_module.so;
+
+-----------------------------------------------------------------------
+BANNER
+
+#DEBHELPER#
+
+exit 0

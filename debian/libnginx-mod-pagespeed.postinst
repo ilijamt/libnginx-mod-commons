@@ -1,0 +1,16 @@
+#!/bin/sh
+
+cat <<BANNER
+-----------------------------------------------------------------------
+
+You have to enable this module by adding the following line to nginx
+configuration then reload nginx:
+
+    load_module modules/ngx_pagespeed.so;
+
+-----------------------------------------------------------------------
+BANNER
+
+#DEBHELPER#
+
+exit 0

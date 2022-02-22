@@ -1,0 +1,8 @@
+libnginx-mod-commons (1.20.2-1~bullseye) bullseye; urgency=medium
+
+  * https://github.com/apache/incubator-pagespeed-ngx 1.13.35.2
+  * https://github.com/google/ngx_brotli.git 9aec15e
+  * https://github.com/nginx-modules/ngx_cache_purge 4746629
+
+ -- Ilija Matoski <ilijamt@gmail.com>  Wed, 22 Feb 2022 19:48:01 +0000
+
