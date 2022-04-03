@@ -58,10 +58,10 @@ RUN set -x && \
     tar -xzvf $(basename ${psol_url})
 
 RUN set -x && \
-    git clone https://github.com/google/ngx_brotli.git ngx_brotli && \
+    git clone --depth 1 https://github.com/google/ngx_brotli.git ngx_brotli && \
     cd ngx_brotli; git submodule update --init
 
-RUN git clone https://github.com/nginx-modules/ngx_cache_purge
+RUN git clone --depth 1 https://github.com/nginx-modules/ngx_cache_purge
 
 COPY debian nginx-${NGINX_SRC_VERSION}/debian
 
